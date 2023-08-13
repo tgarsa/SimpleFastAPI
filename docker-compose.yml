@@ -1,0 +1,11 @@
+version: '2'
+services:
+
+  app-service:
+    build: app-service
+    hostname: app-service
+    container_name: app-service
+    volumes:
+      - ./app-service/:/app
+    ports:
+      - "5000:5000"
