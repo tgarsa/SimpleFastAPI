@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+pydantic
+# To add security
+typing_extensions
+# Step 3
+python-multipart
+# Step 4
+python-jose[cryptography]
+passlib[bcrypt]
+
