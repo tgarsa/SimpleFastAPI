@@ -61,7 +61,7 @@ async def get_test(
         incoming_data: Input
 ):
     texto = incoming_data.text
-
+    texto = 'Tomasada: {}'.format(texto)
     return {"test": texto}
 
 
