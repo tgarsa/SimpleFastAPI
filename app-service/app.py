@@ -52,7 +52,7 @@ async def get_test(
         current_user: Annotated[sec.User, Depends(sec.get_current_active_user)]
 ):
     texto = incoming_data.text
-
+    texto = 'Tomasada NO-FREE: {}'.format(texto)
     return {"test": texto}
 
 
@@ -61,7 +61,7 @@ async def get_test(
         incoming_data: Input
 ):
     texto = incoming_data.text
-    texto = 'Tomasada: {}'.format(texto)
+    texto = 'Tomasada Free: {}'.format(texto)
     return {"test": texto}
 
 
